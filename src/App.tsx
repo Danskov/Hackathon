@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PhotoAlbumComponent from './PhotoAlbum';
+import Slider from './Slider';
 
-function App() {
+const App: React.FC = () => {
+  const [sliderValue, setSliderValue] = React.useState<number>(0);
+  const week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Week mood {week[sliderValue]}</h1>
+      <Slider min={0} max={5} initialValue={0} onChange={setSliderValue} />
+      <PhotoAlbumComponent index={sliderValue} />
     </div>
   );
-}
+};
 
 export default App;
