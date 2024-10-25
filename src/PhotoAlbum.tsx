@@ -32,7 +32,12 @@ const photos: Photo[] = [
     height: 200,
   },
   {
-    src: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.mobsocmedia.com%2Fuploads%2Fsites%2F33%2F20170324110041%2FHappy_Cat_Smiling.jpg&f=1&nofb=1&ipt=88bb98168d15a69c901752f89bda848eb49c4abf7817bba98dacfbde21b4780d&ipo=images",
+    src: "https://img.freepik.com/premium-photo/cute-cat-party-hat-sunglasses-generative-ai_791958-508.jpg",
+    width: 300,
+    height: 200,
+  },
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.acidcow.com%2Fpics%2F20120508%2Fhangover_perfectly_42.jpg&f=1&nofb=1&ipt=a63b342c40d6b64a46af0a33d97858a6ef3b9e44003b13f977f3a609298c9674&ipo=images",
     width: 300,
     height: 200,
   },
