@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <div>
       <h1>Week mood {week[sliderValue]}</h1>
-      <Slider min={0} max={6} initialValue={0} onChange={setSliderValue} />
+      <Slider min={0} max={6} initialValue={0} onChange={() => setSliderValue(sliderValue/1-1)} />
       <PhotoAlbumComponent index={sliderValue} />
     </div>
   );
